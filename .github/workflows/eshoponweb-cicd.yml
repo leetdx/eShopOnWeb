@@ -8,16 +8,18 @@ on: workflow_dispatch
 env:
   # RESOURCE-GROUP: rg-eshoponweb-NAME
   # RESOURCE-GROUP: rg-eshoponweb-westeurope
-  RESOURCE-GROUP: rg-eshoponweb-southeastasia
+  # RESOURCE-GROUP: rg-eshoponweb-southeastasia
+  RESOURCE-GROUP: rg-eshoponweb-eastasia
   # LOCATION: westeurope
-  # LOCATION: eastasia
-  LOCATION: southeastasia
+  # LOCATION: southeastasia
+  LOCATION: eastasia
   TEMPLATE-FILE: infra/webapp.bicep
   # SUBSCRIPTION-ID: YOUR-SUBS-ID
   SUBSCRIPTION-ID: 3d908443-1e8d-418c-aef8-ad335e137f1f
   # WEBAPP-NAME: eshoponweb-webapp-NAME
   # WEBAPP-NAME: devops-webapp-westeurope-3176026157
-  WEBAPP-NAME: devops-webapp-southeastasia-7836022456
+  # WEBAPP-NAME: devops-webapp-southeastasia-7836022456
+  WEBAPP-NAME: devops-webapp-eastasia-994473833
 
 jobs:
   #Build, test and publish .net web project in repository
